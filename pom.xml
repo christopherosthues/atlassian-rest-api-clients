@@ -20,6 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.version>0.0.1-SNAPSHOT</project.version>
 
+		<feign.version></feign.version>
 		<lombok.version>1.18.8</lombok.version>
 		<junit.version>3.8.1</junit.version>
 	</properties>
@@ -38,6 +39,12 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			
+			<dependency>
+				<groupId>io.github.feign</groupId>
+				<artifactId>feign-core</artifactId>
+				<version>${feign.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

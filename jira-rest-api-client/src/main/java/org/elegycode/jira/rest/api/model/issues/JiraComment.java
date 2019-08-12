@@ -5,9 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class JiraIssue<F extends JiraIssueFields> {
+public class JiraComment {
 	private long id;
-	private String key;
-
-	private F fields;
+	
+	private String description;
 }
